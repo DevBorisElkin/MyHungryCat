@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="Light0">#545c91</color>
+    <color name="Light">#666d9e</color>
+    <color name="Light2">#777eb1</color>
+    <color name="Light2_3">#7f86ba</color>
+    <color name="Light3">#9ca3d2</color>
+    <color name="Light5">#bfc5ed</color>
+    <color name="Light4">#b6bce7</color>
+    <color name="white">#FFFFFF</color>
+    <color name="DoubleLight">#d3d6e1</color>
+    <color name="Action">#ff4081</color>
+    <color name="itemContainer">#fae2e2fa</color>
+
+    <color name="colorDay">#fa339eef</color>
+    <color name="colorNight">#fa2b4897</color>
+    <color name="colorFog">#faaebdbf</color>
+    <color name="colorSnow">#fae7f0f1</color>
+    <color name="colorBrokenClouds">#fa7f8b8c</color>
+
+    <color name="colorStickyBG">#00897B</color>
+    <color name="colorSticky">#004989</color>
+    <color name="Dark0">#5d669e</color>
+    <color name="Dark01">#5d669e</color>
+    <color name="Dark">#525c96</color>
+    <color name="Dark2">#3d4787</color>
+
+    <color name="owlShopDarker1">#c89ce2</color>
+    <color name="owlShop">#d6afed</color>
+    <color name="owlButtonAvailable">#ac7dc7</color>
+    <color name="owlButtonAvailableStroke">#b98ad4</color>
+    <color name="owlButtonUnavailable">#818181</color>
+    <color name="owlButtonUnavailableStroke">#8c8c8c</color>
+
+    <color name="purpleDark">#9646c4</color>
+    <color name="owlButtonAvailablePressed">#b787d2</color>
+    <color name="owlButtonAvailableStrokePressed">#bf8eda</color>
+    <color name="owlButtonUnavailablePressed">#949494</color>
+    <color name="owlButtonUnavailableStrokePressed">#9c9c9c</color>
+
+
+    <color name="ButtonUnavailable">#868686</color>
+    <color name="ButtonUnavailableStroke">#7e7d7d</color>
+    <color name="ButtonUnavailablePressed">#919191</color>
+    <color name="ButtonUnavailableStrokePressed">#8b8a8a</color>
+
+    <color name="ButtonUnavailable2">#868686</color>
+    <color name="ButtonUnavailableStroke2">#8c8c8c</color>
+    <color name="ButtonUnavailablePressed2">#919191</color>
+    <color name="ButtonUnavailableStrokePressed2">#949494</color>
+
+    <color name="foxButtonAvailable">#e28843</color>
+    <color name="foxButtonAvailableStroke">#ea8f4a</color>
+    <color name="orangeDark">#de8023</color>
+    <color name="foxButtonAvailablePressed">#ed924b</color>
+    <color name="foxButtonAvailableStrokePressed">#f49954</color>
+
+
+
+
+    <color name="yellowNotif">#f7ee6e</color>
+    <color name="yellowNotif3">#f1e758</color>
+    <color name="yellowNotif2">#ffd769</color>
+    <color name="yellowNotif4">#ffd35b</color>
+    <color name="pinkNotif">#e97573</color>
+    <color name="Orange1">#f7c06a</color>
+    <color name="Orange0">#f9c779</color>
+    <color name="Orange1_darkened">#9c7e4d</color>
+
+    <color name="Orange2">#f7b651</color>
+    <color name="Orange3">#f2a631</color>
+    <color name="Orange2_darkened">#866c43</color>
+    <color name="Orange3_darkened">#715b38</color>
+
+
+    <color name="Orange4">#f29912</color>
+    <color name="Pink1">#df5045</color>
+    <color name="Pink2">#d2463b</color>
+    <color name="Pink3">#c13a30</color>
+    <color name="Pink4">#ae2f26</color>
+
+    <color name="Pinki1">#f1a8a3</color>
+    <color name="Pinki2">#eaa09b</color>
+    <color name="Pinki3">#e69994</color>
+    <color name="Pinki4">#e4948f</color>
+
+    <color name="DarkPink1">#b67470</color>
+    <color name="DarkPink2">#af6f6b</color>
+    <color name="DarkPink3">#a76a66</color>
+    <color name="DarkPink4">#9f6460</color>
+
+    <color name="InfoColor">#484848</color>
+    <color name="InfoColor2">#3e3e3e</color>
+    <color name="InfoColorWhite">#b9b9b9</color>
+    <color name="InfoColorWhite2">#cecece</color>
+
+
+    <color name="Blue1">#acdaf5</color>
+    <color name="Blue2">#a0d1ed</color>
+    <color name="Blue3">#90c4e2</color>
+    <color name="Blue4">#86bcdc</color>
+
+    <color name="Blue1L">#7597a9</color>
+    <color name="Blue2L">#6f8e9f</color>
+    <color name="Blue3L">#637d8c</color>
+    <color name="Blue4L">#516571</color>
+
+
+
+    <color name="PinkBackground">#fdb9b4</color>
+</resources>

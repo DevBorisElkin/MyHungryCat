@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardBackgroundColor="@color/yellowNotif2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+
+        app:cardPreventCornerOverlap="false"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/header"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginEnd="40dp"
+                        android:layout_marginStart="40dp"
+                        android:text="@string/history_page"
+                        android:textAlignment="center"
+                        android:textColor="@color/InfoColor"
+                        android:textSize="29sp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/comicrelief"
+                        android:textStyle="bold"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="9dp"
+                        android:background="@color/Orange2" />
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingEnd="15dp"
+                        android:paddingStart="15dp"
+                        android:text="@string/this_game_was_created_as_a_part_of_my_educational_process"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/InfoColor"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/comicrelief"
+                        />
+
+                    <TextView
+                        android:id="@+id/textView72"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingEnd="15dp"
+                        android:paddingStart="15dp"
+                        android:paddingTop="5dp"
+                        android:text="@string/in_the_beginning_it_had_only_2_levels_level_one_looked_almost_as_same_as_it_is_now_the_only_difference_is_in_background"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/InfoColor"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/comicrelief"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/textView72d"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingEnd="15dp"
+                        android:paddingStart="15dp"
+                        android:paddingTop="5dp"
+                        android:text="@string/now_second_level_is_show_as_a_first_bonus_level"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/InfoColor"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/comicrelief"
+                        />
+
+                    <TextView
+                        android:id="@+id/textView746"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingEnd="15dp"
+                        android:paddingStart="15dp"
+                        android:text="@string/when_you_receive_3_or_more_achievements_you_can_play_bonus_level"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/InfoColor"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/comicrelief"
+                        android:textStyle="bold"
+                        android:layout_marginTop="5dp"/>
+                    <TextView
+                        android:id="@+id/textView746fa"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingEnd="15dp"
+                        android:paddingStart="15dp"
+                        android:text="@string/note_this_level_is_too_raw_and_uncompleted_it_was_added_to_the_game_just_to_show_you_what_kind_of_game_it_was_at_the_beginning"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/InfoColor"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/comicrelief"
+                        android:textStyle="bold"
+                        android:layout_marginTop="5dp"/>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="5dp">
+
+                        <TextView
+                            android:id="@+id/textView746f"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingEnd="5dp"
+                            android:paddingStart="15dp"
+                            android:text="@string/achievements_received"
+                            android:textAlignment="viewStart"
+                            android:textColor="@android:color/black"
+                            android:textSize="18sp"
+
+                            android:fontFamily="@font/comicrelief"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/achievements_amount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingEnd="15dp"
+                            android:paddingStart="2dp"
+                            android:text="0"
+                            android:textAlignment="viewStart"
+                            android:textColor="@android:color/holo_red_light"
+                            android:textSize="18sp"
+                            android:fontFamily="@font/comicrelief"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/bonusLevelButton"
+                        android:layout_width="230dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginTop="7dp"
+                        android:background="@drawable/blue_button_style_locked"
+                        android:paddingEnd="15dp"
+                        android:paddingStart="15dp"
+                        android:text="@string/play_bonus_level"
+
+                        android:textColor="@android:color/black"
+                        android:textSize="11sp"
+                        android:fontFamily="@font/comicrelief"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@color/Orange2" />
+
+                    <TextView
+                        android:id="@+id/header4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginEnd="40dp"
+                        android:layout_marginStart="40dp"
+                        android:text="@string/images_schemes_etc"
+                        android:textAlignment="center"
+                        android:textColor="@color/InfoColor"
+                        android:textSize="24sp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/comicrelief"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/textView74"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:paddingEnd="15dp"
+                        android:paddingStart="15dp"
+                        android:text="@string/scheme_pack_1_belongs_to_levels_2_4"
+                        android:textAlignment="center"
+                        android:textColor="@color/InfoColor"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/comicrelief"
+                        android:textStyle="bold"/>
+
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="324dp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="35dp"
+                        android:layout_marginStart="35dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/bakcground_for_images"
+                        android:padding="10dp"
+                        app:srcCompat="@drawable/scheme44" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="13dp"
+                        android:background="@color/Orange2" />
+
+                    <TextView
+                        android:id="@+id/textView745"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:paddingEnd="15dp"
+                        android:paddingStart="15dp"
+                        android:text="@string/scheme_pack_2_belongs_to_levels_5_6"
+                        android:textAlignment="center"
+                        android:textColor="@color/InfoColor"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/comicrelief"
+                        android:textStyle="bold"
+                        />
+
+
+                    <ImageView
+                        android:id="@+id/imageView66"
+                        android:layout_width="wrap_content"
+                        android:layout_height="310dp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="35dp"
+                        android:layout_marginStart="35dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/bakcground_for_images"
+                        android:padding="10dp"
+                        app:srcCompat="@drawable/scheme_4x" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="13dp"
+                        android:background="@color/Orange2" />
+
+                    <TextView
+                        android:id="@+id/textView7456"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:paddingEnd="15dp"
+                        android:paddingStart="15dp"
+                        android:text="@string/little_scheme_of_interactions_in_level_6"
+                        android:textAlignment="center"
+                        android:textColor="@color/InfoColor"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/comicrelief"
+                        android:textStyle="bold" />
+
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="271dp"
+                        android:layout_gravity="center"
+
+                        android:layout_marginEnd="35dp"
+                        android:layout_marginStart="35dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/bakcground_for_images"
+                        android:padding="10dp"
+                        app:srcCompat="@drawable/scheme_665" />
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="13dp"
+                        android:background="@color/Orange2" />
+
+
+                    <TextView
+                        android:id="@+id/textView7456d"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:paddingEnd="15dp"
+                        android:paddingStart="15dp"
+                        android:text="@string/me_at_the_development_process"
+                        android:textAlignment="center"
+                        android:textColor="@color/InfoColor"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/comicrelief"
+                        android:textStyle="bold" />
+
+
+                    <ImageView
+                        android:id="@+id/imageVieww"
+                        android:layout_width="wrap_content"
+                        android:layout_height="250dp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="35dp"
+                        android:layout_marginStart="35dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/bakcground_for_images"
+                        android:padding="10dp"
+                        app:srcCompat="@drawable/me" />
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="13dp"
+                        android:background="@color/Orange2" />
+
+
+                    <TextView
+                        android:id="@+id/textView746ascv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingEnd="15dp"
+                        android:paddingStart="15dp"
+                        android:text="@string/if_you_have_any_thoughts_about_this_application_just_let_me_know_via_comments_in_googleplay_or_via_my_contact_information_in_credits_page"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/InfoColor"
+                        android:textSize="18sp"
+
+                        android:fontFamily="@font/comicrelief"
+                        />
+
+                    <Button
+                        android:id="@+id/buttonOkay"
+                        android:layout_width="93dp"
+                        android:layout_height="54dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="13dp"
+                        android:layout_marginEnd="25dp"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="9dp"
+                        android:background="@drawable/btn_yellow_style"
+                        android:paddingEnd="15dp"
+                        android:paddingStart="15dp"
+                        android:text="@string/okay"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/comicrelief"
+                        />
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

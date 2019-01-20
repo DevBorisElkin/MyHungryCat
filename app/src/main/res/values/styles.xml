@@ -1,0 +1,42 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="MyAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="button_margin_style" >
+        <item name="android:layout_marginStart">@dimen/button_margin_sides</item>
+        <item name="android:layout_marginEnd">@dimen/button_margin_sides</item>
+        <item name="android:layout_marginBottom">@dimen/button_margin</item>
+        <item name="android:paddingTop">@dimen/button_padding</item>
+        <item name="android:paddingBottom">@dimen/button_padding</item>
+        <item name="android:paddingStart">@dimen/button_padding_sides</item>
+        <item name="android:paddingEnd">@dimen/button_padding_sides</item>
+        <item name="android:background">@drawable/btn_yellow_style</item>
+    </style>
+    <style name="button_margin_style2" >
+        <item name="android:layout_marginStart">@dimen/button_margin_sides</item>
+        <item name="android:layout_marginEnd">@dimen/button_margin_sides</item>
+        <item name="android:layout_marginBottom">@dimen/button_margin</item>
+        <item name="android:background">@drawable/button_circle_3</item>
+    </style>
+    <style name="levelsMenuButton">
+        <item name="android:layout_marginStart">6dp</item>
+        <item name="android:layout_marginEnd">6dp</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:layout_width">55dp</item>
+        <item name="android:layout_height">55dp</item>
+
+    </style>
+
+</resources>

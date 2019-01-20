@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/b2_mini"
+    tools:context=".Levels.Level_four"
+    tools:layout_editor_absoluteY="25dp">
+
+
+    <LinearLayout
+        android:id="@+id/coin_counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/btn_yellow_style"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:paddingStart="4dp"
+            android:text="@string/coin_count"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/moneyCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:paddingEnd="4dp"
+            app:srcCompat="@drawable/coin" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/item_spawn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/mole"
+        android:layout_width="189dp"
+        android:layout_height="89dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/mole" />
+
+    <ImageView
+        android:id="@+id/cat"
+        android:layout_width="69dp"
+        android:layout_height="72dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.659"
+        app:srcCompat="@drawable/hungry_cat" />
+
+    <ImageView
+        android:id="@+id/pound"
+        android:layout_width="133dp"
+        android:layout_height="157dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginTop="108dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pound" />
+
+    <ImageView
+        android:id="@+id/mouse"
+        android:layout_width="37dp"
+        android:layout_height="38dp"
+        android:layout_marginEnd="76dp"
+        app:layout_constraintEnd_toEndOf="@+id/cat"
+        app:layout_constraintTop_toTopOf="@+id/cat"
+        app:srcCompat="@drawable/mouse" />
+
+    <ImageView
+        android:id="@+id/trb"
+        android:layout_width="70dp"
+        android:layout_height="128dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginTop="140dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/trash_bin_opened3" />
+
+    <ImageView
+        android:id="@+id/lid"
+        android:layout_width="67dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/trb"
+        app:layout_constraintTop_toBottomOf="@+id/trb"
+        app:srcCompat="@drawable/lid" />
+
+    <ImageView
+        android:id="@+id/dwarf"
+        android:layout_width="44dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/pound_plant2"
+        app:layout_constraintTop_toBottomOf="@+id/pound_plant2"
+        app:srcCompat="@drawable/dwarf" />
+
+    <ImageView
+        android:id="@+id/shovel"
+        android:layout_width="136dp"
+        android:layout_height="37dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginTop="152dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/shovel" />
+
+    <ImageView
+        android:id="@+id/apple"
+        android:layout_width="33dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginStart="156dp"
+        app:layout_constraintBottom_toTopOf="@+id/mole"
+        app:layout_constraintStart_toStartOf="@+id/mole"
+        app:srcCompat="@drawable/best_apple" />
+
+    <ImageView
+        android:id="@+id/pound_plant1"
+        android:layout_width="28dp"
+        android:layout_height="25dp"
+        app:layout_constraintEnd_toEndOf="@+id/mouse"
+        app:layout_constraintTop_toBottomOf="@+id/cat"
+        app:srcCompat="@drawable/plant" />
+
+    <ImageView
+        android:id="@+id/pound_plant2"
+        android:layout_width="18dp"
+        android:layout_height="17dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/cat"
+        app:layout_constraintStart_toEndOf="@+id/cat"
+        app:srcCompat="@drawable/plant_reverse" />
+
+    <ImageView
+        android:id="@+id/plant1"
+        android:layout_width="23dp"
+        android:layout_height="26dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/plant3"
+        app:layout_constraintStart_toStartOf="@+id/cat"
+        app:srcCompat="@drawable/plant1" />
+
+    <ImageView
+        android:id="@+id/plant2"
+        android:layout_width="22dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/plant3"
+        app:layout_constraintStart_toStartOf="@+id/cat"
+        app:srcCompat="@drawable/plant2" />
+
+    <ImageView
+        android:id="@+id/plant3"
+        android:layout_width="23dp"
+        android:layout_height="26dp"
+        android:layout_marginBottom="64dp"
+        android:layout_marginStart="28dp"
+        app:layout_constraintBottom_toBottomOf="@+id/mouse"
+        app:layout_constraintStart_toStartOf="@+id/mouse"
+        app:srcCompat="@drawable/plant3" />
+
+    <ImageView
+        android:id="@+id/restart"
+        android:layout_width="50dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/button_circle_3"
+        android:elevation="5dp"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/restart" />
+
+</android.support.constraint.ConstraintLayout>

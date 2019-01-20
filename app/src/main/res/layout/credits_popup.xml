@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    >
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardBackgroundColor="@color/yellowNotif2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+
+        app:cardPreventCornerOverlap="false"
+        >
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="0dp"
+            android:orientation="vertical">
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <android.support.constraint.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <TextView
+                            android:id="@+id/header"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_gravity="center"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="@font/comicrelief"
+                            android:text="@string/credits"
+                            android:textAlignment="center"
+                            android:textColor="@color/InfoColor"
+                            android:textStyle="bold"
+                            android:textSize="29sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="@color/Orange2"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/header" />
+
+                        <TextView
+                            android:id="@+id/textView10d"
+                            android:layout_width="147dp"
+                            android:layout_height="34dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginStart="20dp"
+                            android:fontFamily="@font/comicrelief"
+                            android:text="@string/boris_elkin"
+                            android:textColor="@color/InfoColor"
+                            android:textSize="23sp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toEndOf="@+id/imageView5"
+                            app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+                        <TextView
+                            android:id="@+id/textView10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="32dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginStart="164dp"
+                            android:layout_marginTop="72dp"
+                            android:fontFamily="@font/comicrelief"
+                            android:text="@string/programming"
+                            android:textColor="@android:color/white"
+                            android:textStyle="bold"
+                            android:textSize="19sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.164"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/imageView5"
+                            android:layout_width="130dp"
+                            android:layout_height="84dp"
+                            android:layout_marginEnd="20dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="64dp"
+                            app:layout_constraintEnd_toStartOf="@+id/textView10"
+                            app:layout_constraintHorizontal_bias="1.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/coding" />
+
+                        <ImageView
+                            android:id="@+id/imageView6"
+                            android:layout_width="114dp"
+                            android:layout_height="119dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginStart="60dp"
+                            android:layout_marginTop="36dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toEndOf="@+id/imageView5"
+                            app:layout_constraintTop_toBottomOf="@+id/imageView5"
+                            app:srcCompat="@drawable/art" />
+
+                        <TextView
+                            android:id="@+id/textView10ddd"
+                            android:layout_width="53dp"
+                            android:layout_height="35dp"
+                            android:layout_marginEnd="80dp"
+                            android:layout_marginTop="1dp"
+                            android:fontFamily="@font/comicrelief"
+                            android:text="98%"
+                            android:textColor="@color/InfoColor"
+                            android:textSize="23sp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toStartOf="@+id/imageView6"
+                            app:layout_constraintTop_toBottomOf="@+id/textView10f" />
+
+                        <TextView
+                            android:id="@+id/textView10dd"
+                            android:layout_width="171dp"
+                            android:layout_height="37dp"
+                            android:layout_marginTop="28dp"
+                            android:fontFamily="@font/comicrelief"
+                            android:text="@string/boris_elkin"
+                            android:textColor="@color/InfoColor"
+                            android:textSize="23sp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toStartOf="@+id/imageView6"
+                            app:layout_constraintTop_toTopOf="@+id/textView10ddd" />
+
+                        <TextView
+                            android:id="@+id/textView10dwdd"
+                            android:layout_width="129dp"
+                            android:layout_height="36dp"
+                            android:layout_marginEnd="20dp"
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="@font/comicrelief"
+                            android:text="@string/_2_open_sources"
+                            android:textColor="@color/InfoColor"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toStartOf="@+id/imageView6"
+                            app:layout_constraintTop_toBottomOf="@id/textView10dd" />
+
+                        <TextView
+                            android:id="@+id/textView10f"
+                            android:layout_width="126dp"
+                            android:layout_height="33dp"
+                            android:layout_marginEnd="48dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="36dp"
+                            android:fontFamily="@font/comicrelief"
+                            android:text="@string/art"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/white"
+                            android:textSize="19sp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toStartOf="@+id/imageView6"
+                            app:layout_constraintHorizontal_bias="1.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+                        <ImageView
+                            android:id="@+id/imageView7"
+                            android:layout_width="104dp"
+                            android:layout_height="92dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="48dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.03"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView10dwdd"
+                            app:srcCompat="@drawable/music" />
+
+                        <TextView
+                            android:id="@+id/textView10fggd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="36dp"
+                            android:fontFamily="@font/comicrelief"
+                            android:text="@string/music"
+                            android:textColor="@android:color/white"
+                            android:textSize="19sp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.62"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+                        <TextView
+                            android:id="@+id/textView9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/comicrelief"
+                            android:text="@string/in_menu"
+                            android:textColor="@color/Orange4"
+                            android:textSize="15sp"
+                            app:layout_constraintStart_toEndOf="@+id/imageView7"
+                            app:layout_constraintTop_toBottomOf="@+id/textView10fggd"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/rr2"
+                            android:layout_width="224dp"
+                            android:layout_height="73dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="@font/comicrelief"
+                            android:text="@string/composer_benjamin_tissot_this_composition_was_found_on_www_bensound_com"
+                            android:textColor="@color/InfoColor"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="@+id/textView9"
+                            app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/comicrelief"
+                            android:text="''Beyond the line''"
+                            android:textColor="@color/InfoColor"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toEndOf="@+id/textView9"
+                            app:layout_constraintTop_toBottomOf="@+id/textView10fggd" />
+
+                        <TextView
+                            android:id="@+id/textView9wd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:fontFamily="@font/comicrelief"
+                            android:text="@string/in_game"
+                            android:textColor="@color/Orange4"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toStartOf="@+id/textView13"
+                            app:layout_constraintHorizontal_bias="0.648"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/textView13" />
+
+                        <TextView
+                            android:id="@+id/textView13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="164dp"
+                            android:layout_marginTop="40dp"
+                            android:fontFamily="@font/comicrelief"
+                            android:text="''Tranquility''"
+                            android:textColor="@color/InfoColor"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+                        <TextView
+                            android:id="@+id/textView12"
+                            android:layout_width="326dp"
+                            android:layout_height="44dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="3dp"
+                            android:fontFamily="@font/comicrelief"
+                            android:text="@string/was_found_on_www_purple_planet_com"
+                            android:textColor="@color/InfoColor"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView9wd" />
+
+                        <TextView
+                            android:id="@+id/textView12ddwdwd"
+                            android:layout_width="185dp"
+                            android:layout_height="66dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="@font/comicrelief"
+                            android:text="@string/special_thanks_to_freesound_org_for_all_sound_effects"
+                            android:textColor="@color/InfoColor"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.207"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView10fggddd" />
+
+                        <TextView
+                            android:id="@+id/textView10fggddd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="16dp"
+                            android:fontFamily="@font/comicrelief"
+                            android:text="@string/sounds"
+                            android:textColor="@android:color/white"
+                            android:textSize="19sp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.265"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+                        <TextView
+                            android:id="@+id/font"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="116dp"
+                            android:fontFamily="@font/comicrelief"
+                            android:text="@string/font"
+                            android:textColor="@android:color/white"
+                            android:textSize="19sp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.501"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+                        <TextView
+                            android:id="@+id/font1"
+                            android:layout_width="317dp"
+                            android:layout_height="63dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginStart="8dp"
+                            android:fontFamily="@font/comicrelief"
+                            android:text="Copyright (c) 2013, Jeff Davis (info@loudifier.com), with Reserved Font Name ''Comic Relief''."
+                            android:textColor="@color/InfoColor"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/font"
+                            android:textAlignment="center"/>
+
+                        <TextView
+                            android:id="@+id/font2"
+                            android:layout_width="317dp"
+                            android:layout_height="48dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="@font/comicrelief"
+                            android:text="SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007"
+                            android:textColor="@color/InfoColor"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/font1"
+                            android:textAlignment="center"/>
+
+
+                        <Button
+                            android:id="@+id/close"
+                            style="@style/button_margin_style2"
+                            android:layout_width="137dp"
+                            android:layout_height="45dp"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="15dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/comicrelief"
+                            android:text="@string/close"
+                            android:textColor="@android:color/white"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView12dd" />
+
+
+                        <View
+                            android:id="@+id/view"
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="@color/Orange2"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/font2" />
+
+                        <TextView
+                            android:id="@+id/text223"
+                            android:layout_width="349dp"
+                            android:layout_height="25dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="@font/comicrelief"
+                            android:text="@string/you_can_contact_me_ea_foreverrr_gmail_com"
+                            android:textColor="@color/InfoColor"
+                            android:textSize="13sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/view"
+                            android:textAlignment="center"/>
+
+                        <TextView
+                            android:id="@+id/textView12dd"
+                            android:layout_width="343dp"
+                            android:layout_height="45dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/comicrelief"
+                            android:text="@string/feel_free_to_share_your_thoughts_about_this_app"
+                            android:textAlignment="center"
+                            android:textColor="@color/InfoColor"
+                            android:textSize="13sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/text223" />
+
+                        <ImageView
+                            android:id="@+id/make_sound"
+                            android:layout_width="61dp"
+                            android:layout_height="52dp"
+                            android:layout_marginEnd="52dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="24dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.961"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView12"
+                            app:srcCompat="@drawable/sound" />
+
+                        <TextView
+                            android:id="@+id/textView15"
+                            android:layout_width="117dp"
+                            android:layout_height="33dp"
+                            android:layout_marginEnd="11dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/comicrelief"
+                            android:text="@string/random_sound"
+                            android:textAlignment="center"
+                            android:textColor="@color/InfoColor"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.916"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/make_sound" />
+                    </android.support.constraint.ConstraintLayout>
+                </ScrollView>
+
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

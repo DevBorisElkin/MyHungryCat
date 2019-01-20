@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/b1_minii"
+    tools:context=".Levels.Level_one"
+    >
+
+    <ImageView
+        android:id="@+id/cat"
+        android:layout_width="97dp"
+        android:layout_height="106dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.557"
+        app:srcCompat="@drawable/hungry_cat" />
+
+
+    <ImageView
+        android:id="@+id/fish"
+        android:layout_width="53dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="76dp"
+        app:layout_constraintStart_toEndOf="@+id/poison"
+        app:layout_constraintTop_toBottomOf="@+id/cat"
+        app:srcCompat="@drawable/fish" />
+
+    <ImageView
+        android:id="@+id/poison"
+        android:layout_width="32dp"
+        android:layout_height="83dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintEnd_toStartOf="@+id/cat"
+        app:layout_constraintTop_toBottomOf="@+id/cat"
+        app:srcCompat="@drawable/poison" />
+</android.support.constraint.ConstraintLayout>

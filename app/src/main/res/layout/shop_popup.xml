@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp"
+    >
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="15dp"
+        app:cardBackgroundColor="@color/yellowNotif"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+
+        app:cardPreventCornerOverlap="false"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ScrollView
+                    android:id="@+id/scrollView"
+                    style="@android:style/Widget.Material.Light.ScrollView"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:scrollbarStyle="outsideOverlay"
+                    android:visibility="visible"
+                    android:background="@color/yellowNotif3">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="23dp">
+
+                    <TextView
+                        android:id="@+id/text1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:text="@string/mole_s_shop"
+                        android:textAlignment="center"
+                        android:textSize="30sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/comicrelief"
+                        android:textColor="@color/InfoColor2"/>
+
+                    <TextView
+                        android:id="@+id/text2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginEnd="24dp"
+                        android:layout_marginStart="24dp"
+                        android:text="@string/here_you_can_choose_items_you_want_to_buy_each_item_can_be_bought_only_once"
+                        android:textAlignment="center"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/comicrelief"
+                        android:textColor="@color/InfoColor2"/>
+
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:paddingBottom="6dp"
+                        >
+
+                        <TextView
+                            android:id="@+id/textView5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/your_money"
+                            android:textStyle="bold"
+                            android:textSize="17sp"
+                            android:layout_marginEnd="4dp"
+                            android:layout_gravity="center"
+                            android:textColor="@color/InfoColor2"/>
+
+                        <TextView
+                            android:id="@+id/currentMoneyTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textSize="17sp"
+                            android:layout_marginEnd="4dp"
+                            android:text="0"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/comicrelief"
+                            android:textColor="@color/InfoColor2"/>
+
+                        <ImageView
+                            android:id="@+id/imageView3"
+                            android:layout_width="35dp"
+                            android:layout_height="30dp"
+                            app:srcCompat="@drawable/coin"
+                            android:layout_gravity="center"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="5dp"
+                        android:layout_gravity="center"
+                        >
+
+                        <ImageView
+                            android:id="@+id/item1"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:padding="10dp"
+                            app:srcCompat="@drawable/old_boot"
+                            android:background="@drawable/shop_item_1"
+                            android:layout_gravity="center"/>
+
+                        <TextView
+                            android:id="@+id/price1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="10"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="2dp"
+                            android:fontFamily="@font/comicrelief"
+                            android:textColor="@color/InfoColor2"/>
+
+                        <ImageView
+                            android:id="@+id/coinPicture1"
+                            android:layout_width="35dp"
+                            android:layout_height="30dp"
+                            app:srcCompat="@drawable/coin"
+                            android:layout_gravity="center"/>
+
+                        <Button
+                            android:id="@+id/buttonBuy1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="7dp"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="3dp"
+                            android:background="@drawable/btn_yellow_style"
+                            android:elevation="3dp"
+                            android:textStyle="bold"
+                            android:text="@string/buy"
+                            android:fontFamily="@font/comicrelief"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="5dp"
+                        android:layout_gravity="center"
+                        >
+
+                        <ImageView
+                            android:id="@+id/item3"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:padding="10dp"
+                            app:srcCompat="@drawable/cheese"
+                            android:background="@drawable/shop_item_1"
+                            android:layout_gravity="center"/>
+
+                        <TextView
+                            android:id="@+id/price2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="10"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="2dp"
+                            android:fontFamily="@font/comicrelief"
+                            android:textColor="@color/InfoColor2"/>
+
+                        <ImageView
+                            android:id="@+id/coinPicture3"
+                            android:layout_width="35dp"
+                            android:layout_height="30dp"
+                            app:srcCompat="@drawable/coin"
+                            android:layout_gravity="center"/>
+
+                        <Button
+                            android:id="@+id/buttonBuy3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="7dp"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="3dp"
+                            android:background="@drawable/btn_yellow_style"
+                            android:elevation="3dp"
+                            android:textStyle="bold"
+                            android:text="@string/buy"
+                            android:fontFamily="@font/comicrelief"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="5dp"
+                        android:layout_gravity="center"
+                        >
+
+                        <ImageView
+                            android:id="@+id/item2"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:padding="10dp"
+                            app:srcCompat="@drawable/sleeping_drug"
+                            android:background="@drawable/shop_item_1"
+                            android:layout_gravity="center"/>
+
+                        <TextView
+                            android:id="@+id/price3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="10"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="2dp"
+                            android:fontFamily="@font/comicrelief"
+                            android:textColor="@color/InfoColor2"/>
+
+                        <ImageView
+                            android:id="@+id/coinPicture2"
+                            android:layout_width="35dp"
+                            android:layout_height="30dp"
+                            app:srcCompat="@drawable/coin"
+                            android:layout_gravity="center"/>
+
+                        <Button
+                            android:id="@+id/buttonBuy2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="7dp"
+                            android:layout_marginLeft="12dp" android:layout_marginTop="3dp"
+                            android:background="@drawable/btn_yellow_style"
+                            android:elevation="3dp"
+                            android:textStyle="bold"
+                            android:text="@string/buy"
+                            android:fontFamily="@font/comicrelief"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="5dp"
+                        android:layout_gravity="center"
+                        >
+
+                        <ImageView
+                            android:id="@+id/item4"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:padding="10dp"
+                            app:srcCompat="@drawable/big_fish"
+                            android:background="@drawable/shop_item_1"
+                            android:layout_gravity="center"/>
+
+                        <TextView
+                            android:id="@+id/price4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="22"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="2dp"
+                            android:fontFamily="@font/comicrelief"
+                            android:textColor="@color/InfoColor2"/>
+
+                        <ImageView
+                            android:id="@+id/coinPicture4"
+                            android:layout_width="35dp"
+                            android:layout_height="30dp"
+                            app:srcCompat="@drawable/coin"
+                            android:layout_gravity="center"/>
+
+                        <Button
+                            android:id="@+id/buttonBuy4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="7dp"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="3dp"
+                            android:background="@drawable/btn_yellow_style"
+                            android:elevation="3dp"
+                            android:textStyle="bold"
+                            android:text="@string/buy"
+                            android:fontFamily="@font/comicrelief"/>
+
+                    </LinearLayout>
+
+
+                    <Button
+                        android:layout_marginBottom="35dp"
+                        android:layout_marginTop="15dp"
+                        android:id="@+id/close_shop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn_yellow_style"
+                        android:layout_gravity="center"
+                        android:text="@string/close_shop"
+                        android:paddingStart="25dp"
+                        android:paddingEnd="25dp"
+                        android:fontFamily="@font/comicrelief"/>
+
+                </LinearLayout>
+                </ScrollView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

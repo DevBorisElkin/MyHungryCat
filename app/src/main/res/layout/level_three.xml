@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/b5mini"
+    tools:context=".Levels.Level_three"
+    tools:layout_editor_absoluteY="25dp"
+    android:id="@+id/constrainL">
+
+    <ImageView
+        android:id="@+id/trb_opened"
+        android:layout_width="74dp"
+        android:layout_height="112dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.533"
+        app:srcCompat="@drawable/trash_bin_opened" />
+
+    <ImageView
+        android:id="@+id/trb3"
+        android:layout_width="70dp"
+        android:layout_height="107dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@+id/trb_opened"
+        app:layout_constraintTop_toTopOf="@+id/trb_opened"
+        app:srcCompat="@drawable/trash_bin" />
+
+    <ImageView
+        android:id="@+id/trb1"
+        android:layout_width="74dp"
+        android:layout_height="111dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="@+id/trb_opened"
+        app:layout_constraintTop_toTopOf="@+id/trb_opened"
+        app:srcCompat="@drawable/trash_bin" />
+
+    <ImageView
+        android:id="@+id/trb2"
+        android:layout_width="74dp"
+        android:layout_height="111dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintStart_toStartOf="@+id/trb1"
+        app:layout_constraintTop_toTopOf="@+id/trb3"
+        app:srcCompat="@drawable/trash_bin" />
+
+    <ImageView
+        android:id="@+id/trb_falling"
+        android:layout_width="75dp"
+        android:layout_height="111dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintEnd_toEndOf="@+id/trb2"
+        app:layout_constraintTop_toTopOf="@+id/trb1"
+        app:srcCompat="@drawable/trash_bin" />
+
+
+    <ImageView
+        android:id="@+id/cat"
+        android:layout_width="68dp"
+        android:layout_height="66dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.673"
+        app:layout_constraintStart_toEndOf="@+id/trb2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.682"
+        app:srcCompat="@drawable/hungry_cat" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="357dp"
+        android:layout_height="11dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="13dp"
+        android:max="2000"
+        android:progress="0"
+        android:progressDrawable="@drawable/custom_progressbar"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/cat_satisfaction"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/progressBar"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/progressBar"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar" />
+
+    <ImageView
+        android:id="@+id/chest"
+        android:layout_width="120dp"
+        android:layout_height="85dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/cat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/cat"
+        app:srcCompat="@drawable/dirty_chest" />
+
+
+    <ImageView
+        android:id="@+id/bittenApple"
+        android:layout_width="28dp"
+        android:layout_height="26dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="44dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/spoiledBigFish"
+        app:srcCompat="@drawable/apple" />
+
+    <ImageView
+        android:id="@+id/spoiledBigFish"
+        android:layout_width="76dp"
+        android:layout_height="33dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="188dp"
+        android:layout_marginTop="116dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/cat"
+        app:layout_constraintTop_toTopOf="@+id/cat"
+        app:layout_constraintVertical_bias="0.577"
+        app:srcCompat="@drawable/big_spoiled_fish" />
+
+    <ImageView
+        android:id="@+id/emptyBottle2"
+        android:layout_width="54dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintEnd_toStartOf="@+id/car_door"
+        app:layout_constraintTop_toBottomOf="@+id/cat"
+        app:srcCompat="@drawable/empty_bottle_reverse1" />
+
+
+    <ImageView
+        android:id="@+id/item_spawn"
+        android:layout_width="30dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/good_apple"
+        android:layout_width="27dp"
+        android:layout_height="26dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="44dp"
+        app:layout_constraintBottom_toTopOf="@+id/trb1"
+        app:layout_constraintEnd_toEndOf="@+id/trb1"
+        app:srcCompat="@drawable/best_apple" />
+
+    <ImageView
+        android:id="@+id/trb_lid"
+        android:layout_width="68dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="116dp"
+        android:layout_marginEnd="72dp"
+        app:layout_constraintBottom_toBottomOf="@+id/trb1"
+        app:layout_constraintEnd_toEndOf="@+id/trb3"
+        app:srcCompat="@drawable/lid" />
+
+    <ImageView
+        android:id="@+id/fish2"
+        android:layout_width="43dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintStart_toStartOf="@+id/car_door"
+        app:layout_constraintTop_toTopOf="@+id/car_door"
+        app:srcCompat="@drawable/fish" />
+
+    <ImageView
+        android:id="@+id/car_door"
+        android:layout_width="118dp"
+        android:layout_height="128dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/cat"
+        app:layout_constraintTop_toBottomOf="@+id/cat"
+        app:srcCompat="@drawable/car_door" />
+
+    <ImageView
+        android:id="@+id/crap"
+        android:layout_width="37dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="156dp"
+        app:layout_constraintEnd_toStartOf="@+id/spoiledBigFish"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chest"
+        app:srcCompat="@drawable/crap2" />
+
+    <ImageView
+        android:id="@+id/restart"
+        android:layout_width="50dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/button_circle_3"
+        android:elevation="5dp"
+        android:padding="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView2"
+        app:srcCompat="@drawable/restart" />
+
+</android.support.constraint.ConstraintLayout>

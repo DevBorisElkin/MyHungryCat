@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardBackgroundColor="@color/yellowNotif2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+
+        app:cardPreventCornerOverlap="false"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/header"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginEnd="40dp"
+                        android:layout_marginStart="40dp"
+                        android:text="@string/achievements"
+                        android:textAlignment="center"
+                        android:textColor="@color/InfoColor2"
+                        android:textSize="29sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="7dp"
+                        android:fontFamily="@font/comicrelief"
+                        />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="9dp"
+                        android:background="@color/Orange2" />
+
+
+                    <LinearLayout
+                        android:layout_marginTop="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginStart="12dp"
+
+                        >
+
+                        <TextView
+                            android:id="@+id/awd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/achievements_count"
+                            android:textColor="@color/InfoColor2"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/comicrelief"
+                            />
+                        <TextView
+                            android:id="@+id/achievements_counter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text= " 0"
+                            android:textColor="@color/InfoColor2"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/comicrelief"
+                            />
+                    </LinearLayout>
+
+                    <ProgressBar
+                        android:id="@+id/progressBar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="11dp"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginEnd="12dp"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="8dp"
+                        android:max="4"
+                        android:progress="0"
+                        android:progressDrawable="@drawable/custom_progressbar2"
+                        android:visibility="visible"
+                        />
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <android.support.constraint.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/all_levels_achievement"
+                                android:layout_width="match_parent"
+                                android:layout_height="98dp"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="8dp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/all_levels_locked" />
+
+                            <TextView
+                                android:id="@+id/textView8"
+                                android:layout_width="260dp"
+                                android:layout_height="30dp"
+                                android:layout_marginBottom="3dp"
+                                android:layout_marginEnd="8dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginTop="8dp"
+                                android:fontFamily="@font/comicrelief"
+                                android:text="@string/definitive_victory"
+                                android:textColor="@android:color/white"
+                                android:textSize="19sp"
+                                android:textStyle="bold"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.277"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="0.3" />
+
+                            <TextView
+                                android:id="@+id/textView89"
+                                android:layout_width="262dp"
+                                android:layout_height="28dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginEnd="180dp"
+                                android:layout_marginTop="0dp"
+                                android:text="@string/pass_all_casual_levels"
+                                android:textColor="@android:color/white"
+                                android:textSize="17sp"
+                                android:textStyle="bold"
+                                app:layout_constraintBottom_toBottomOf="@+id/all_levels_achievement"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintStart_toStartOf="@+id/textView8"
+                                app:layout_constraintTop_toBottomOf="@+id/textView8"
+                                app:layout_constraintVertical_bias="0.384"
+                                android:fontFamily="@font/comicrelief"/>
+                        </android.support.constraint.ConstraintLayout>
+
+                        <android.support.constraint.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/all_deaths_achievement"
+                                android:layout_width="match_parent"
+                                android:layout_height="97dp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="2dp"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginStart="10dp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="1.0"
+                                app:srcCompat="@drawable/all_deaths_locked"
+                                />
+
+                            <TextView
+                                android:id="@+id/textView6"
+                                android:layout_width="179dp"
+                                android:layout_height="27dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginEnd="8dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginTop="8dp"
+                                android:text="@string/playing_with_death"
+                                android:textColor="@android:color/white"
+                                android:textSize="19sp"
+                                android:textStyle="bold"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.158"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="0.129"
+                                android:fontFamily="@font/comicrelief"/>
+
+                            <TextView
+                                android:id="@+id/text_achievement_death"
+                                android:layout_width="259dp"
+                                android:layout_height="19dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginEnd="108dp"
+                                android:layout_marginTop="5dp"
+                                android:text="@string/unknown"
+                                android:textAlignment="textStart"
+                                android:textColor="@android:color/white"
+                                android:textSize="15sp"
+                                android:textStyle="bold"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintStart_toStartOf="@+id/textView6"
+                                app:layout_constraintTop_toBottomOf="@+id/textView6"
+                                app:layout_constraintVertical_bias="0.0"
+                                android:fontFamily="@font/comicrelief"/>
+                        </android.support.constraint.ConstraintLayout>
+                        <android.support.constraint.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/mass_killer_achievement"
+                                android:layout_width="match_parent"
+                                android:layout_height="96dp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="3dp"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginStart="10dp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="1.0"
+                                app:srcCompat="@drawable/mass_killer_blocked" />
+
+                            <TextView
+                                android:id="@+id/textView6fvvv"
+                                android:layout_width="179dp"
+                                android:layout_height="27dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginEnd="8dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginTop="8dp"
+                                android:text="@string/mass_killer"
+                                android:textColor="@android:color/white"
+                                android:textSize="19sp"
+                                android:textStyle="bold"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.158"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="0.129"
+                                android:fontFamily="@font/comicrelief"/>
+
+                            <TextView
+                                android:id="@+id/text_achievement_mass_killer"
+                                android:layout_width="332dp"
+                                android:layout_height="25dp"
+                                android:layout_marginEnd="24dp"
+                                android:layout_marginTop="5dp"
+                                android:text="@string/unknown"
+                                android:textAlignment="textStart"
+                                android:textColor="@android:color/white"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintStart_toStartOf="@+id/textView6fvvv"
+                                app:layout_constraintTop_toBottomOf="@+id/textView6fvvv"
+                                android:fontFamily="@font/comicrelief"
+                                />
+                        </android.support.constraint.ConstraintLayout>
+                        <android.support.constraint.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/mutant_achievement"
+                                android:layout_width="match_parent"
+                                android:layout_height="95dp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginStart="10dp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="1.0"
+                                app:srcCompat="@drawable/woolf_in_sheep_clothing_locked" />
+
+                            <TextView
+                                android:id="@+id/textView6fvwdvv"
+                                android:layout_width="307dp"
+                                android:layout_height="27dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginEnd="8dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginTop="8dp"
+                                android:text="@string/wolf_in_sheep_s_clothing"
+                                android:textColor="@android:color/white"
+                                android:textSize="19sp"
+                                android:textStyle="bold"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.508"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="0.133"
+                                android:fontFamily="@font/comicrelief"/>
+
+                            <TextView
+                                android:id="@+id/text_achievement_cat_mutant"
+                                android:layout_width="302dp"
+                                android:layout_height="24dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginEnd="52dp"
+                                android:layout_marginTop="5dp"
+                                android:text="@string/unknown"
+                                android:textAlignment="textStart"
+                                android:textColor="@android:color/white"
+                                android:textSize="15sp"
+                                android:textStyle="bold"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintStart_toStartOf="@+id/textView6fvwdvv"
+                                app:layout_constraintTop_toBottomOf="@+id/textView6fvwdvv"
+                                app:layout_constraintVertical_bias="0.0"
+                                android:fontFamily="@font/comicrelief"/>
+                        </android.support.constraint.ConstraintLayout>
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/buttonOkay"
+                        android:layout_width="93dp"
+                        android:layout_height="54dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="9dp"
+                        android:layout_marginEnd="25dp"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="9dp"
+                        android:background="@drawable/btn_yellow_style"
+                        android:paddingEnd="15dp"
+                        android:paddingStart="15dp"
+                        android:text="Okay"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/comicrelief"/>
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

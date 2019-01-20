@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Levels.Level_five"
+    android:background="@drawable/b5_mini3"
+    android:id="@+id/constraint_layout"
+    >
+
+    <ImageView
+        android:id="@+id/theWall"
+        android:layout_width="94dp"
+        android:layout_height="291dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.603"
+        app:srcCompat="@drawable/wall" />
+
+    <ImageView
+        android:id="@+id/cat"
+        android:layout_width="54dp"
+        android:layout_height="57dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="252dp"
+        app:layout_constraintEnd_toStartOf="@+id/crane"
+        app:layout_constraintTop_toBottomOf="@+id/crane2"
+        app:srcCompat="@drawable/hungry_cat" />
+
+    <ImageView
+        android:id="@+id/mole"
+        android:layout_width="162dp"
+        android:layout_height="79dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/mole" />
+
+    <ImageView
+        android:id="@+id/boxLocked"
+        android:layout_width="107dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="152dp"
+        app:layout_constraintStart_toEndOf="@+id/theWall"
+        app:layout_constraintTop_toTopOf="@+id/theWall"
+        app:srcCompat="@drawable/construction_box_locked" />
+
+    <ImageView
+        android:id="@+id/boxUnlocked"
+        android:layout_width="107dp"
+        android:layout_height="65dp"
+        app:layout_constraintStart_toEndOf="@+id/boxLocked"
+        app:layout_constraintTop_toTopOf="@+id/boxLocked"
+        app:srcCompat="@drawable/construction_box_unlocked" />
+
+    <ImageView
+        android:id="@+id/crane"
+        android:layout_width="97dp"
+        android:layout_height="303dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.612"
+        app:srcCompat="@drawable/crane2" />
+
+    <ImageView
+        android:id="@+id/crane2"
+        android:layout_width="209dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="232dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/crane"
+        app:layout_constraintEnd_toEndOf="@+id/crane"
+        app:srcCompat="@drawable/crane_balk" />
+
+    <ImageView
+        android:id="@+id/plate"
+        android:layout_width="103dp"
+        android:layout_height="85dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginTop="272dp"
+        app:layout_constraintEnd_toEndOf="@+id/crane"
+        app:layout_constraintTop_toTopOf="@+id/crane"
+        app:srcCompat="@drawable/plate" />
+
+    <ImageView
+        android:id="@+id/bricks"
+        android:layout_width="72dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/plate"
+        app:layout_constraintEnd_toEndOf="@+id/plate"
+        app:srcCompat="@drawable/bricks" />
+
+    <ImageView
+        android:id="@+id/itemSpawn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/box"
+        android:layout_width="56dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="165dp"
+        app:layout_constraintEnd_toEndOf="@+id/crane2"
+        app:layout_constraintTop_toBottomOf="@+id/crane2"
+        app:srcCompat="@drawable/imbalanced_box" />
+
+    <Button
+        android:id="@+id/check2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@+id/restart"
+        android:layout_width="50dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/button_circle_3"
+        android:elevation="5dp"
+        android:padding="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/restart" />
+
+    <ImageView
+        android:id="@+id/brick2"
+        android:layout_width="35dp"
+        android:layout_height="23dp"
+        android:layout_marginBottom="28dp"
+        android:layout_marginEnd="120dp"
+        app:layout_constraintBottom_toTopOf="@+id/cat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/brick"/>
+
+    <ImageView
+        android:id="@+id/brick"
+        android:layout_width="35dp"
+        android:layout_height="22dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toStartOf="@+id/cat"
+        app:layout_constraintTop_toBottomOf="@+id/cat"
+        app:srcCompat="@drawable/brick" />
+
+</android.support.constraint.ConstraintLayout>
