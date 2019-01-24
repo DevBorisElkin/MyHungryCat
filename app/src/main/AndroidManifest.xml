@@ -9,22 +9,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/MyAppTheme">
-        <activity android:name=".MenuFolder.MainActivity">
+        <activity android:name=".MenuFolder.MainActivity"  android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Levels.Level_one" />
-        <activity android:name=".Levels.Level_three" />
-        <activity android:name=".MenuFolder.LevelsMenu" />
-        <activity android:name=".Levels.Level_four" />
-        <activity android:name=".Levels.Level_five" />
-        <activity android:name=".Levels.Level_two" />
-        <activity android:name=".Levels.Level_9_test_activity" />
-        <activity android:name=".Levels.Level_six"></activity>
-        <activity android:name=".Levels.BonusLevelOne"></activity>
+        <activity android:name=".Levels.Level_one" android:screenOrientation="portrait" />
+        <activity android:name=".Levels.Level_three" android:screenOrientation="portrait"  />
+        <activity android:name=".MenuFolder.LevelsMenu" android:screenOrientation="portrait"  />
+        <activity android:name=".Levels.Level_four" android:screenOrientation="portrait"  />
+        <activity android:name=".Levels.Level_five" android:screenOrientation="portrait"  />
+        <activity android:name=".Levels.Level_two" android:screenOrientation="portrait"  />
+        <activity android:name=".Levels.Level_9_test_activity" android:screenOrientation="portrait"  />
+        <activity android:name=".Levels.Level_six" android:screenOrientation="portrait" ></activity>
+        <activity android:name=".Levels.BonusLevelOne"  android:screenOrientation="portrait" ></activity>
 
         <meta-data
             android:name="preloaded_fonts"

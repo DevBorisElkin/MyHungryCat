@@ -68,6 +68,11 @@ public class MainActivity extends AppCompatActivity {
     CardView cardView;
     View v;
 
+    int tapCounter=0;
+    boolean tap1=false;
+    boolean tap2=false;
+    boolean tapUnlock=true;
+
     boolean achievemt1recieved=false;
     boolean achievemt2recieved=false;
     boolean achievemt3recieved=false;
@@ -224,16 +229,70 @@ public class MainActivity extends AppCompatActivity {
         return new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                ImageView img1;
+                TextView music, dev;
                 dialog=new Dialog(MainActivity.this,android.R.style.Theme_Black_NoTitleBar_Fullscreen);
                 dialog.setCanceledOnTouchOutside(false);
                 dialog.setContentView(R.layout.credits_popup);
                 makeSound=dialog.findViewById(R.id.make_sound);
                 makeSound.setOnClickListener(makeRandomSound());
+                img1=dialog.findViewById(R.id.imageLaptopPass);
+                music=dialog.findViewById(R.id.textPass);
+                dev=dialog.findViewById(R.id.headerPass);
+
+                img1.setOnClickListener(passCheck1());
+                music.setOnLongClickListener(passCheck2());
+                dev.setOnLongClickListener(passCheck3());
 
                 back=dialog.findViewById(R.id.close);
                 back.setOnClickListener(close());
                 dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
                 dialog.show();
+            }
+        };
+    }
+
+    @NonNull
+    private View.OnClickListener passCheck1(){
+        return new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                tapCounter+=1;
+                if(tapCounter>=7&&tap1&&tap2&&tapUnlock){
+                    tapUnlock=false;
+                    allProgress();
+                }
+            }
+        };
+    }
+    @NonNull
+    private View.OnLongClickListener passCheck2(){
+        return new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View view) {
+                tap1=true;
+                if(tapCounter>=7&&tap1&&tap2&&tapUnlock){
+                    tapUnlock=false;
+                    allProgress();
+                }
+                return true;
+            }
+        };
+    }
+
+
+    @NonNull
+    private View.OnLongClickListener passCheck3(){
+        return new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View view) {
+                tap2=true;
+                if(tapCounter>=7&&tap1&&tap2&&tapUnlock){
+                    tapUnlock=false;
+                    allProgress();
+                }
+                return true;
+
             }
         };
     }
@@ -315,26 +374,31 @@ public class MainActivity extends AppCompatActivity {
         return new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                mySharedPref=getSharedPreferences(MainActivity.KEY, MODE_PRIVATE);
-                SharedPreferences.Editor mEditor=mySharedPref.edit();
-                mEditor.putInt(MainActivity.LEVEL_2_UNLOCK_KEY, 22);
-                mEditor.putInt(MainActivity.LEVEL_3_UNLOCK_KEY, 33);
-                mEditor.putInt(MainActivity.LEVEL_4_UNLOCK_KEY, 44);
-                mEditor.putInt(MainActivity.LEVEL_5_UNLOCK_KEY, 55);
-                mEditor.putInt(MainActivity.LEVEL_6_UNLOCK_KEY, 66);
-                mEditor.putInt(MainActivity.ALL_LEVELS_ARE_PASSED_KEY, 77);
-                mEditor.putInt(MainActivity.CAT_KILLED_LEVEL_1,1);
-                mEditor.putInt(MainActivity.CAT_KILLED_LEVEL_2,1);
-                mEditor.putInt(MainActivity.CAT_KILLED_LEVEL_3,1);
-                mEditor.putInt(MainActivity.CAT_KILLED_LEVEL_4,1);
-                mEditor.putInt(MainActivity.CAT_KILLED_LEVEL_5,1);
-                mEditor.putInt(MainActivity.CAT_KILLED_LEVEL_6,1);
-                mEditor.putInt(MainActivity.MASS_KILL_COMPLETED, 888);
-                mEditor.putInt(MainActivity.CAT_MUTANT, 1);
-                mEditor.apply();
-                checkHistoryPageAvailable();
+                allProgress();
             }
         };
+    }
+
+    public void allProgress(){
+        mySharedPref=getSharedPreferences(MainActivity.KEY, MODE_PRIVATE);
+        SharedPreferences.Editor mEditor=mySharedPref.edit();
+        mEditor.putInt(MainActivity.LEVEL_2_UNLOCK_KEY, 22);
+        mEditor.putInt(MainActivity.LEVEL_3_UNLOCK_KEY, 33);
+        mEditor.putInt(MainActivity.LEVEL_4_UNLOCK_KEY, 44);
+        mEditor.putInt(MainActivity.LEVEL_5_UNLOCK_KEY, 55);
+        mEditor.putInt(MainActivity.LEVEL_6_UNLOCK_KEY, 66);
+        mEditor.putInt(MainActivity.ALL_LEVELS_ARE_PASSED_KEY, 77);
+        mEditor.putInt(MainActivity.CAT_KILLED_LEVEL_1,1);
+        mEditor.putInt(MainActivity.CAT_KILLED_LEVEL_2,1);
+        mEditor.putInt(MainActivity.CAT_KILLED_LEVEL_3,1);
+        mEditor.putInt(MainActivity.CAT_KILLED_LEVEL_4,1);
+        mEditor.putInt(MainActivity.CAT_KILLED_LEVEL_5,1);
+        mEditor.putInt(MainActivity.CAT_KILLED_LEVEL_6,1);
+        mEditor.putInt(MainActivity.MASS_KILL_COMPLETED, 888);
+        mEditor.putInt(MainActivity.CAT_MUTANT, 1);
+        mEditor.apply();
+        checkHistoryPageAvailable();
+        makeText("Dev_Mode_Activated");
     }
 
     @NonNull
@@ -618,7 +682,7 @@ public class MainActivity extends AppCompatActivity {
         level4=dialog.findViewById(R.id.level_4);
         level5=dialog.findViewById(R.id.level_5);
         level6=dialog.findViewById(R.id.level_6);
-        header=dialog.findViewById(R.id.header);
+        header=dialog.findViewById(R.id.headerPass);
         level7=dialog.findViewById(R.id.level_7);
         level8=dialog.findViewById(R.id.level_8);
         level9=dialog.findViewById(R.id.level_9);

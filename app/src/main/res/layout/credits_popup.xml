@@ -42,7 +42,7 @@
 
 
                         <TextView
-                            android:id="@+id/header"
+                            android:id="@+id/headerPass"
                             android:layout_width="match_parent"
                             android:layout_height="48dp"
                             android:layout_gravity="center"
@@ -66,7 +66,7 @@
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintHorizontal_bias="0.0"
                             app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/header" />
+                            app:layout_constraintTop_toBottomOf="@+id/headerPass" />
 
                         <TextView
                             android:id="@+id/textView10d"
@@ -81,7 +81,7 @@
                             android:textStyle="bold"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintHorizontal_bias="0.0"
-                            app:layout_constraintStart_toEndOf="@+id/imageView5"
+                            app:layout_constraintStart_toEndOf="@+id/imageLaptopPass"
                             app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
                         <TextView
@@ -102,7 +102,7 @@
                             app:layout_constraintTop_toTopOf="parent" />
 
                         <ImageView
-                            android:id="@+id/imageView5"
+                            android:id="@+id/imageLaptopPass"
                             android:layout_width="130dp"
                             android:layout_height="84dp"
                             android:layout_marginEnd="20dp"
@@ -123,8 +123,8 @@
                             android:layout_marginTop="36dp"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintHorizontal_bias="0.0"
-                            app:layout_constraintStart_toEndOf="@+id/imageView5"
-                            app:layout_constraintTop_toBottomOf="@+id/imageView5"
+                            app:layout_constraintStart_toEndOf="@+id/imageLaptopPass"
+                            app:layout_constraintTop_toBottomOf="@+id/imageLaptopPass"
                             app:srcCompat="@drawable/art" />
 
                         <TextView
@@ -184,7 +184,7 @@
                             app:layout_constraintEnd_toStartOf="@+id/imageView6"
                             app:layout_constraintHorizontal_bias="1.0"
                             app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+                            app:layout_constraintTop_toBottomOf="@+id/imageLaptopPass" />
 
                         <ImageView
                             android:id="@+id/imageView7"
@@ -200,7 +200,7 @@
                             app:srcCompat="@drawable/music" />
 
                         <TextView
-                            android:id="@+id/textView10fggd"
+                            android:id="@+id/textPass"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginEnd="8dp"
@@ -227,7 +227,7 @@
                             android:textColor="@color/Orange4"
                             android:textSize="15sp"
                             app:layout_constraintStart_toEndOf="@+id/imageView7"
-                            app:layout_constraintTop_toBottomOf="@+id/textView10fggd"
+                            app:layout_constraintTop_toBottomOf="@+id/textPass"
                             android:textStyle="bold"/>
 
                         <TextView
@@ -260,7 +260,7 @@
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintHorizontal_bias="0.0"
                             app:layout_constraintStart_toEndOf="@+id/textView9"
-                            app:layout_constraintTop_toBottomOf="@+id/textView10fggd" />
+                            app:layout_constraintTop_toBottomOf="@+id/textPass" />
 
                         <TextView
                             android:id="@+id/textView9wd"
